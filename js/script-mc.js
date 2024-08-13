@@ -1,4 +1,4 @@
-const RADIO_NAME = 'Radio Conexion Pop Latino';
+const RADIO_NAME = 'Musica Cristiana';
 
 // Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
 const URL_STREAMING = 'https://stream.zeno.fm/efy4auvgp9duv';
