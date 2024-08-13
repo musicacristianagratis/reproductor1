@@ -138,7 +138,7 @@ class Page {
             const artistName = document.querySelectorAll('#historicSong article .music-info .artist')[n];
             const coverHistoric = document.querySelectorAll('#historicSong article .cover-historic')[n];
             
-            const defaultCoverArt = "https://xatimg.com/image/dDbBhmHppT47.jpg"; //imagen default
+            const defaultCoverArt = '../img/cover.png'; //imagen default
             //const defaultArt = 'img/logan.png';
             
             const music = info.song.replace(/'/g, '\'').replace(/&/g, '&');
@@ -165,7 +165,7 @@ class Page {
         this.refreshCover = async function (song = '', artist) {
             const coverArt = document.getElementById('currentCoverArt');
             const coverBackground = document.getElementById('bgCover');
-            const defaultCoverArt = "https://xatimg.com/image/dDbBhmHppT47.jpg"; // imagen default
+            const defaultCoverArt = '../img/cover.png'; // imagen default
         
             try {
                 const data = await getDataFromConexionKpop(artist, song, defaultCoverArt);
@@ -355,7 +355,7 @@ audio.onvolumechange = function () {
 }
 
 audio.onerror = function () {
-    var confirmacao = confirm('TransmisiÃ³n inactiva/Error de red. \nHaga clic en Aceptar para intentarlo de nuevo.');
+    var confirmacao = confirm('Transmisión inactiva/Error de red. \nHaga clic en Aceptar para intentarlo de nuevo.');
 
     if (confirmacao) {
         window.location.reload();
