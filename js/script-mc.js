@@ -1,7 +1,7 @@
 const RADIO_NAME = 'Radio Música Cristiana';
 
 // Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
-const URL_STREAMING = 'https://stream.zeno.fm/e2fgp8rvh9duv';
+const URL_STREAMING = 'https://stream.zeno.fm/b10wvksv7mruv';
 
 var TYPE_API ='SPOTIFY'; //selecciona entre itunes , deezer o spotify xd
 
