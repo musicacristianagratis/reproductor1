@@ -1,9 +1,7 @@
-const RADIO_NAME = '♫ MusicaCristiana ♪';
+const RADIO_NAME = 'Radio Conexion Pop Latino';
 
 // Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
-const URL_STREAMING = 'https://stream.zeno.fm/efy4auvgp9duv';
-
-const url = 'https://api.zeno.fm/mounts/metadata/subscribe/yn65fsaurfhvv';
+const URL_STREAMING = 'https://stream.zeno.fm/3avhth2r6r7tv';
 
 var TYPE_API ='SPOTIFY'; //selecciona entre itunes , deezer o spotify xd
 
@@ -140,7 +138,7 @@ class Page {
             const artistName = document.querySelectorAll('#historicSong article .music-info .artist')[n];
             const coverHistoric = document.querySelectorAll('#historicSong article .cover-historic')[n];
             
-            const defaultCoverArt = "../img/cover.png"; //imagen default
+            const defaultCoverArt = "https://xatimg.com/image/dDbBhmHppT47.jpg"; //imagen default
             //const defaultArt = 'img/logan.png';
             
             const music = info.song.replace(/'/g, '\'').replace(/&/g, '&');
@@ -167,7 +165,7 @@ class Page {
         this.refreshCover = async function (song = '', artist) {
             const coverArt = document.getElementById('currentCoverArt');
             const coverBackground = document.getElementById('bgCover');
-            const defaultCoverArt = "../img/cover.png"; // imagen default
+            const defaultCoverArt = "https://xatimg.com/image/dDbBhmHppT47.jpg"; // imagen default
         
             try {
                 const data = await getDataFromConexionKpop(artist, song, defaultCoverArt);
@@ -213,7 +211,7 @@ class Page {
           
         this.setVolume = function() {
             if (typeof Storage !== 'undefined') {
-              const volumeLocalStorage = localStorage.getItem('volume') || 95; 
+              const volumeLocalStorage = localStorage.getItem('volume') || 80; 
           
               document.getElementById('volume').value = volumeLocalStorage;
               document.getElementById('volIndicator').textContent = volumeLocalStorage;
@@ -483,4 +481,3 @@ function intToDecimal(vol) {
 function decimalToInt(vol) {
     return vol * 100;
 }
-
