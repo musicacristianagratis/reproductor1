@@ -138,7 +138,7 @@ class Page {
             const artistName = document.querySelectorAll('#historicSong article .music-info .artist')[n];
             const coverHistoric = document.querySelectorAll('#historicSong article .cover-historic')[n];
             
-            const defaultCoverArt = "https://xatimg.com/image/dDbBhmHppT47.jpg"; //imagen default
+            const defaultCoverArt = "../img/cover.png"; //imagen default
             //const defaultArt = 'img/logan.png';
             
             const music = info.song.replace(/'/g, '\'').replace(/&/g, '&');
