@@ -211,7 +211,7 @@ class Page {
           
         this.setVolume = function() {
             if (typeof Storage !== 'undefined') {
-              const volumeLocalStorage = localStorage.getItem('volume') || 95; 
+              const volumeLocalStorage = localStorage.getItem('volume') || 80; 
           
               document.getElementById('volume').value = volumeLocalStorage;
               document.getElementById('volIndicator').textContent = volumeLocalStorage;
