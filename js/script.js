@@ -1,7 +1,7 @@
 const RADIO_NAME = '♫ Radio Música Cristiana ♪';
 
 // Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
-const URL_STREAMING = 'https://stream.zeno.fm/efy4auvgp9duv';
+const URL_STREAMING = 'https://stream.zeno.fm/kyvcfnsvh9duv';
 
 // You can find the mount point in the Broadcast Settings.
 // To generate the Zeno Radio API link from the mount point,
@@ -9,7 +9,7 @@ const URL_STREAMING = 'https://stream.zeno.fm/efy4auvgp9duv';
 // For example, if the mount point is 'yn65fsaurfhvv/source',
 // the API link will be 'https://api.zeno.fm/mounts/metadata/subscribe/yn65fsaurfhvv'.
 
-const url = 'https://api.zeno.fm/mounts/metadata/subscribe/efy4auvgp9duv';
+const url = 'https://api.zeno.fm/mounts/metadata/subscribe/kyvcfnsvh9duv';
 
 // Visit https://api.vagalume.com.br/docs/ to get your API key
 const API_KEY = "18fe07917957c289983464588aabddfb";
